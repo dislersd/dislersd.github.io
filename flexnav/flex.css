@@ -21,8 +21,12 @@
     display: flex;
   }
 
+  .box:hover {
+    background: none;
+  }
+
   img {
-      position: fixed;
+      position: relative;
       width: inherit;
       height: inherit; 
   }
@@ -75,18 +79,35 @@
   
   .box1 {
     background: #fae222;
+    background-image: url(img/353444\ -\ audio\ film\ media\ movie\ music\ play\ player\ video.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
   }
   
   .box2 {
-    background: #efa222
+    background: #efa222;
+    background-image: url(img/353424\ -\ instagram\ logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+
   }
   
   .box3 {
-    background: #cef
+    background: #cef;
+    background-image: url(img/353427\ -\ logo\ twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
   }
   
   .box4 {
-    background: #fec
+    background: #fec;
+    background-image: url(img/353429\ -\ audio\ music\ note\ sound.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
   }
 
   .boxes a {
