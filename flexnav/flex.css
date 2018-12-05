@@ -88,4 +88,7 @@
   .box4 {
     background: #fec
   }
-  
+
+  .boxes a {
+    width: 100px;
+  }
