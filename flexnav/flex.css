@@ -1,15 +1,36 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+  }
+
+  h1 {
+    text-align: center;
+    background: rgb(254, 251, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    width: 80%;
+    text-transform: uppercase;
+    color: rgb(52, 52, 52);
   }
   
   .boxes {
-    background: lightgray;
-    height: 500px;
+    background: rgb(254, 160, 160);
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+  }
+
+  .boxes2 {
+    width: 80%;
+    background: whitesmoke;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   
   .box {
@@ -48,15 +69,10 @@
     to {background: rgba(255, 255, 255, 0); width: 200px; height: 100px; color: white;}
   }
   
-  @keyframes expandDown {
-    from {}
-    to {background: rgba(255, 255, 255, 0); width: 100px; height: 200px; color: white;}
-  }
-  
   .text {
     text-decoration: none;
     font-size: .7em;
-    color: rgb(28, 28, 28);
+    color: oldlace;
     display: flex;
     opacity: 0;
     height: 100%;
@@ -79,12 +95,12 @@
     from {}
     to {
       opacity: 100;
-      background: whitesmoke;
+      background: rgb(52, 52, 52);
     }
   }
   
   .box1 {
-    background: #fae222;
+    background: rgb(131, 145, 83);
     background-image: url(img/353444\ -\ audio\ film\ media\ movie\ music\ play\ player\ video.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -92,7 +108,7 @@
   }
   
   .box2 {
-    background: #efa222;
+    background: rgb(255, 229, 176);
     background-image: url(img/353424\ -\ instagram\ logo.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -101,7 +117,7 @@
   }
   
   .box3 {
-    background: #cef;
+    background: rgb(182, 206, 160);
     background-image: url(img/353427\ -\ logo\ twitter.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -109,22 +125,23 @@
   }
   
   .box4 {
-    background: #fec;
+    background: rgb(250, 162, 111);
     background-image: url(img/353429\ -\ audio\ music\ note\ sound.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110%;
   }
 
-  .boxes a {
-    //width: 100px;
-  }
-
   @media screen and (max-height: 500px) {
     
-    .boxes {
+    .boxes, .boxes2 {
       display: flex;
       flex-direction: row;
       justify-content: center;
     }
+  }
+
+  .master {
+    display: flex;
+    justify-content: space-between;
   }
