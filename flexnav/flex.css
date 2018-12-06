@@ -6,32 +6,28 @@
 
   h1 {
     text-align: center;
-    background: rgb(254, 251, 245);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 42px;
-    width: 80%;
     text-transform: uppercase;
-    color: rgb(52, 52, 52);
+    color: rgb(239, 241, 242);
+    background: rgb(75, 120, 235);
   }
   
   .boxes {
-    background: rgb(254, 160, 160);
-    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+    flex-wrap: wrap;
   }
 
-  .boxes2 {
+  /* .boxes2 {
     width: 80%;
-    background: whitesmoke;
+    background: rgb(155, 164, 165);
     margin: 0 auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-  }
+  } */
   
   .box {
     height: 100px;
@@ -55,7 +51,6 @@
 
   img:hover {
       opacity: 0;
-      background: coral;
   }
   
   .box:hover {
@@ -66,7 +61,12 @@
   
   @keyframes expand {
     from {}
-    to {background: rgba(255, 255, 255, 0); width: 200px; height: 100px; color: white;}
+    to {background: rgba(255, 255, 255, 0); width: 165px; height: 100px; color: white;}
+  }
+
+  @keyframes expandDown {
+    from {}
+    to {background: rgba(255, 255, 255, 0); width: 160px; height: 200px; color: white;}
   }
   
   .text {
@@ -85,7 +85,7 @@
   .text:hover {
     display: flex;
     animation-name: reveal;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     height: 100%;
     width: 100%;
@@ -132,16 +132,61 @@
     background-size: 110%;
   }
 
-  @media screen and (max-height: 500px) {
+  .box5 {
+    background: rgb(250, 250, 250);
+    background-image: url(img/353418\ -\ laptop\ notebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+  }
+
+  .box6 {
+    background: rgb(191, 222, 220);
+    background-image: url(img/353430\ -\ checkbox\ edit\ pen\ pencil.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+  }
+
+  .box7 {
+    background: rgb(6, 230, 133);
+    background-image: url(img/353418\ -\ laptop\ notebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+  }
+
+  .box8 {
+    background: rgb(244, 139, 219);
+    background-image: url(img/353418\ -\ laptop\ notebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+  }
+
+  @media screen and (max-height: 450px) {
     
     .boxes, .boxes2 {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      margin: 0 auto;
+      flex-wrap: nowrap;
     }
+
+    .box:hover {
+      animation-name: expandDown;
+      animation-duration: .4s;
+      animation-fill-mode: forwards
+    }
+
   }
 
   .master {
     display: flex;
-    justify-content: space-between;
+    background: rgb(254, 251, 245);
+  }
+
+  .vid {
+    margin: 0 auto;
   }
