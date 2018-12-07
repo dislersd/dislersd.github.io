@@ -15,8 +15,9 @@
   
   .boxes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   /* .boxes2 {
@@ -57,16 +58,6 @@
     animation-name: expand;
     animation-duration: .4s;
     animation-fill-mode: forwards
-  }
-  
-  @keyframes expand {
-    from {}
-    to {background: rgba(255, 255, 255, 0); width: 165px; height: 100px; color: white;}
-  }
-
-  @keyframes expandDown {
-    from {}
-    to {background: rgba(255, 255, 255, 0); width: 160px; height: 200px; color: white;}
   }
   
   .text {
@@ -164,7 +155,7 @@
     background-size: 110%;
   }
 
-  @media screen and (max-height: 450px) {
+  /* @media screen and (max-height: 450px) {
     
     .boxes, .boxes2 {
       display: flex;
@@ -172,10 +163,10 @@
       justify-content: center;
       margin: 0 auto;
       flex-wrap: nowrap;
-    }
+    } */
 
     .box:hover {
-      animation-name: expandDown;
+      animation-name: expand;
       animation-duration: .4s;
       animation-fill-mode: forwards
     }
@@ -187,6 +178,21 @@
     background: rgb(254, 251, 245);
   }
 
-  .vid {
-    margin: 0 auto;
+  .youtube {
   }
+
+.video {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+  @keyframes expand {
+    from {}
+    to {background: rgba(255, 255, 255, 0); width: 165px; height: 100px; color: white;}
+  }
+
+  /* @keyframes expandDown {
+    from {}
+    to {background: rgba(255, 255, 255, 0); width: 160px; height: 200px; color: white;}
+  } */
