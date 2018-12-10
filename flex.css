@@ -18,6 +18,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
   }
 
   /* .boxes2 {
@@ -169,9 +170,7 @@
       animation-name: expand;
       animation-duration: .4s;
       animation-fill-mode: forwards
-    }
-
- } 
+    } 
 
   .master {
     display: flex;
@@ -187,6 +186,7 @@
 .small {
 display: flex;
 justify-content: center;
+align-content: flex-end;
 padding: 20px;
 }
 
