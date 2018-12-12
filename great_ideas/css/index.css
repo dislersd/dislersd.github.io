@@ -402,7 +402,7 @@ nav {
 
 header {
     padding-bottom: 70px;
-    width: 90%;
+    width: 95%;
     margin-bottom: 40px;
 }
 
@@ -417,12 +417,12 @@ header {
 
 .middle-img {
 	height: 90px;
-	width: 90%;
+	width: 95%;
 }
 
 .top {
     flex-direction: column;
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 }
 
@@ -433,7 +433,7 @@ header {
 
 .bottom {
 	flex-direction: column;
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 }
 
@@ -447,6 +447,6 @@ section {
 
 .contact {
 	margin: 20px auto;
-	width: 90%;
+	width: 95%;
 }
 }
