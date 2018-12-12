@@ -120,7 +120,7 @@ nav a:hover {
 }
 @keyframes colorchangeMQ {
 	from {background:whitesmoke;}
-	to {background: #81DFA0;}
+	to {background: #81DFA0; box-shadow: none;}
 }
 
 h1 {
@@ -369,16 +369,20 @@ Media Queries */
 }
 
 @media (max-width: 500px) {
+body {
+	width: 500px;
+}
 
 .navigation {
     position: relative;
-    width: 500px;
+	width: 100%;
+	margin: 40px 0;
 }
 
 nav {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 100%;
 }
 
 .navigation a {
@@ -401,22 +405,22 @@ nav {
 
 header {
     padding-bottom: 70px;
-    width: 460px;
+    width: 90%;
     margin-bottom: 40px;
 }
 
  .innovationtext {
     width: 100%;
-    padding-left: 30px;
 }
 
 .middle-img {
-    height: 90px;
+	height: 90px;
+	width: 90%;
 }
 
 .top {
     flex-direction: column;
-    width: 500px;
+    width: 90%;
 }
 
 .top section {
@@ -425,7 +429,8 @@ header {
 }
 
 .bottom {
-    flex-direction: column;
+	flex-direction: column;
+	width: 90%;
 }
 
 h2 {
@@ -437,6 +442,7 @@ section {
 }
 
 .contact {
-    margin: 20px 0;
+	margin: 20px auto;
+	width: 90%;
 }
 }
