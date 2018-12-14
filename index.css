@@ -1,3 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ----------------------------- */
 @font-face {
   font-family: SpaceG;
   src: url(fonts/spacegrotesk-regular.woff)
@@ -9,6 +60,12 @@
     box-sizing: border-box;
   }
 
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   h1 {
     text-align: center;
     font-family: SpaceG, Helvetica, sans-serif; 
@@ -17,6 +74,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     background: #222222;
+    letter-spacing: 1px;
   }
   
   .boxes {
@@ -185,14 +243,18 @@
 .video {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .small {
 display: flex;
 justify-content: center;
-align-content: flex-end;
-padding: 20px;
+position: fixed;
+bottom: 0;
+text-align: center;
+width: 30%;
+margin: 0 auto;
+z-index: -1;
 }
 
   @keyframes expand {
@@ -210,6 +272,16 @@ padding: 20px;
     @keyframes mobile {
       from {}
       to {background: rgba(255, 255, 255, 0); width: 100%; color: white;}
+    }
+
+    .text {
+      opacity: 100;
+      color: black;
+      text-shadow: -2px 2px #FFFFFF;
+    }
+
+    body {
+      display: block;
     }
 
     .boxes {
@@ -234,7 +306,7 @@ padding: 20px;
       background: rgb(131, 145, 83);
       background-image: url(img/353444\ -\ audio\ film\ media\ movie\ music\ play\ player\ video.svg);
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
       background-size: 30%;
     }
     
@@ -242,7 +314,7 @@ padding: 20px;
       background: rgb(255, 229, 176);
       background-image: url(img/353424\ -\ instagram\ logo.svg);
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
       background-size: 30%;
   
     }
@@ -251,7 +323,7 @@ padding: 20px;
       background: rgb(182, 206, 160);
       background-image: url(img/353427\ -\ logo\ twitter.svg);
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
       background-size: 30%;
     }
     
@@ -259,7 +331,13 @@ padding: 20px;
       background: rgb(250, 162, 111);
       background-image: url(img/353429\ -\ audio\ music\ note\ sound.svg);
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: left;
       background-size: 30%;
+    }
+
+    .small {
+      display: block;
+      position: relative;
+      width: 100%
     }
   }
