@@ -284,7 +284,7 @@ z-index: -1;
     .text {
       opacity: 100;
       color: black;
-      text-shadow: -2px 2px #FFFFFF;
+      text-shadow: -1px 1px #FFFFFF;
     }
 
     body {
