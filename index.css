@@ -1,3 +1,11 @@
+@font-face {
+  font-family: SpaceG;
+  src: 
+    url(font/spacegrotesk-regular.woff2) format('woff2'),
+    url(fonts/spacegrotesk-regular.woff) format('woff');
+}
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -49,9 +57,8 @@ table {
 
 
 /* ----------------------------- */
-@font-face {
-  font-family: SpaceG;
-  src: url(fonts/spacegrotesk-regular.woff)
+html {
+  font-size: 62.5%;
 }
 
 * {
@@ -69,8 +76,8 @@ table {
   h1 {
     text-align: center;
     font-family: SpaceG, Helvetica, sans-serif; 
-    font-size: 42px;
-    font-weight: bold;
+    font-size: 5.45rem;
+    font-weight: bolder;
     text-transform: uppercase;
     color: #FFFFFF;
     background: #222222;
