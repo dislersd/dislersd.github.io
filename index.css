@@ -1,10 +1,3 @@
-@font-face {
-  font-family: SpaceG;
-  src: 
-    url(./font/spacegrotesk-regular.woff2) format('woff2'),
-    url(./fonts/spacegrotesk-regular.woff) format('woff');
-}
-
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -75,13 +68,13 @@ html {
 
   h1 {
     text-align: center;
-    font-family: SpaceG, Helvetica, sans-serif; 
-    font-size: 5.45rem;
-    font-weight: bolder;
+    font-family: 'Roboto', Helvetica, sans-serif; 
+    font-size: 5.33rem;
+    font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF;
     background: #222222;
-    letter-spacing: 1px;
+    letter-spacing: 1.1px;
   }
   
   .boxes {
@@ -89,7 +82,6 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
   }
 
   /* .boxes2 {
@@ -134,7 +126,7 @@ html {
   
   .text {
     text-decoration: none;
-    font-size: .7em;
+    font-size: 2.5rem;
     color: oldlace;
     display: flex;
     opacity: 0;
@@ -142,7 +134,7 @@ html {
     width: 100%;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'space mono', Helvetica, sans-serif;
   }
   
   .text:hover {
