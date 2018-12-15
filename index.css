@@ -1,8 +1,8 @@
 @font-face {
   font-family: SpaceG;
   src: 
-    url(font/spacegrotesk-regular.woff2) format('woff2'),
-    url(fonts/spacegrotesk-regular.woff) format('woff');
+    url(./font/spacegrotesk-regular.woff2) format('woff2'),
+    url(./fonts/spacegrotesk-regular.woff) format('woff');
 }
 
 
