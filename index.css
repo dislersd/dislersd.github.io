@@ -381,6 +381,10 @@ address {
   color: navy;
 }
 
+.abme a:hover {
+  color: coral;
+}
+
 .video {
   width: 90%;
 }
