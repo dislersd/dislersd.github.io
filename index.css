@@ -1,51 +1,137 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 
@@ -55,31 +141,31 @@ html {
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-  h1 {
-    text-align: center;
-    font-family: 'Roboto', Helvetica, sans-serif; 
-    font-size: 5.33rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #222222;
-    letter-spacing: 1.1px;
-  }
+h1 {
+  text-align: center;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 5.33rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #222222;
+  letter-spacing: 1.1px;
+}
 
-  /* .boxes2 {
+/* .boxes2 {
     width: 80%;
     background: rgb(155, 164, 165);
     margin: 0 auto;
@@ -89,163 +175,162 @@ html {
     align-items: flex-end;
   } */
 
-  header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-  }
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  address {
-    padding-top: 2rem;
-  }
-  
-  .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.979);
-  }
+address {
+  padding-top: 2rem;
+}
 
-  .spacer {
-    height: 15.3rem;
-    width: 100%;
-  }
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.979);
+}
 
-  .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+.spacer {
+  height: 15.3rem;
+  width: 100%;
+}
 
-  .boxes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-  .box {
-    height: 100px;
-    width: 100px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    text-align: center;
-    font-size: 2em;
-    display: flex;
-  }
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .box:hover {
-    background: none;
-  }
-  
-  .box:hover {
-    animation-name: expand;
-    animation-duration: .4s;
-    animation-fill-mode: forwards
-  }
-  
-  .text {
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: oldlace;
-    display: flex;
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-family: 'space mono', Helvetica, sans-serif;
-  }
-  
-  .text:hover {
-    display: flex;
-    animation-name: reveal;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    height: 100%;
-    width: 100%;
-  }
-  
-  @keyframes reveal {
-    from {}
-    to {
-      opacity: 100;
-      background: rgb(52, 52, 52);
-    }
-  }
-  
-  .box1 {
-    background: rgb(131, 145, 83);
-    background-image: url(img/353444\ -\ audio\ film\ media\ movie\ music\ play\ player\ video.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 110%;
-  }
-  
-  .box2 {
-    background: rgb(255, 229, 176);
-    background-image: url(img/353424\ -\ instagram\ logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 110%;
+.box {
+  height: 100px;
+  width: 100px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+}
 
-  }
-  
-  .box3 {
-    background: rgb(182, 206, 160);
-    background-image: url(img/353427\ -\ logo\ twitter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 110%;
-  }
-  
-  .box4 {
-    background: rgb(250, 162, 111);
-    background-image: url(img/353429\ -\ audio\ music\ note\ sound.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 110%;
-  }
+.box:hover {
+  background: none;
+}
 
-  .box5 {
-    background: rgb(250, 250, 250);
-    background-image: url(img/353418\ -\ laptop\ notebook.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 110%;
-  }
+.box:hover {
+  animation-name: expand;
+  animation-duration: .4s;
+  animation-fill-mode: forwards
+}
 
-  .box6 {
-    background: rgb(191, 222, 220);
-    background-image: url(img/353430\ -\ checkbox\ edit\ pen\ pencil.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 110%;
-  }
+.text {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: oldlace;
+  display: flex;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: 'space mono', Helvetica, sans-serif;
+}
 
-  .box7 {
-    background: rgb(6, 230, 133);
-    background-image: url(img/353418\ -\ laptop\ notebook.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 110%;
-  }
+.text:hover {
+  display: flex;
+  animation-name: reveal;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  height: 100%;
+  width: 100%;
+}
 
-  .box8 {
-    background: rgb(244, 139, 219);
-    background-image: url(img/353418\ -\ laptop\ notebook.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 110%;
-  }
+@keyframes reveal {
+  from {}
 
-  /* @media screen and (max-height: 450px) {
+  to {
+    opacity: 100;
+    background: rgb(52, 52, 52);
+  }
+}
+
+.box1 {
+  background: rgb(131, 145, 83);
+  background-image: url(img/353444\ -\ audio\ film\ media\ movie\ music\ play\ player\ video.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+}
+
+.box2 {
+  background: rgb(255, 229, 176);
+  background-image: url(img/353424\ -\ instagram\ logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+
+}
+
+.box3 {
+  background: rgb(182, 206, 160);
+  background-image: url(img/353427\ -\ logo\ twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+}
+
+.box4 {
+  background: rgb(250, 162, 111);
+  background-image: url(img/353429\ -\ audio\ music\ note\ sound.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+}
+
+.box5 {
+  background: rgb(250, 250, 250);
+  background-image: url(img/353418\ -\ laptop\ notebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+}
+
+.box6 {
+  background: rgb(191, 222, 220);
+  background-image: url(img/353430\ -\ checkbox\ edit\ pen\ pencil.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+}
+
+.box7 {
+  background: rgb(6, 230, 133);
+  background-image: url(img/353418\ -\ laptop\ notebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+}
+
+.box8 {
+  background: rgb(244, 139, 219);
+  background-image: url(img/353418\ -\ laptop\ notebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110%;
+}
+
+/* @media screen and (max-height: 450px) {
     
     .boxes, .boxes2 {
       display: flex;
@@ -255,161 +340,172 @@ html {
       flex-wrap: nowrap;
     } */
 
-    .box:hover {
-      animation-name: expand;
-      animation-duration: .4s;
-      animation-fill-mode: forwards
-    }
-    
-  .abme {
-    max-width: 880px;
-    width: 100%;
-    font-size: 2rem;
-    padding: 2rem;
-    margin: 3rem 1rem;
-    background: #ffffff;
-    border-top: 1px dotted #27292b;
-    border-bottom: 1px dotted #27292b;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  } 
+.box:hover {
+  animation-name: expand;
+  animation-duration: .4s;
+  animation-fill-mode: forwards
+}
 
-  .abme h2 {
-    font-size: 3.2rem;
-    margin: 1rem auto;
-    width: 100%;
-    font-family: Roboto;
-  }
+.abme {
+  max-width: 880px;
+  width: 100%;
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 3rem 1rem;
+  background: #ffffff;
+  border-top: 1px dotted #27292b;
+  border-bottom: 1px dotted #27292b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .abme p {
-    font-family: Space Mono, Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
-    line-height: 1.3;
-    color: #27292b;
-    max-width: 60rem;
-    width: 100%;
-  }
+.abme h2 {
+  font-size: 3.2rem;
+  margin: 1rem auto;
+  width: 100%;
+  font-family: Roboto;
+}
 
-  .abme a {
-    text-decoration: none;
-    color: navy;
-  }
+.abme p {
+  font-family: Space Mono, Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  color: #27292b;
+  max-width: 60rem;
+  width: 100%;
+}
+
+.abme a {
+  text-decoration: none;
+  color: navy;
+}
 
 .video {
   width: 90%;
 }
 
 .small {
-display: flex;
-justify-content: center;
-position: fixed;
-bottom: 0;
-text-align: center;
-width: 30%;
-margin: 0 auto;
-z-index: -1;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  z-index: -1;
 }
 
-  @keyframes expand {
-    from {}
-    to {background: rgba(255, 255, 255, 0); width: 120px; height: 100px; color: white;}
+@keyframes expand {
+  from {}
+
+  to {
+    background: rgba(255, 255, 255, 0);
+    width: 120px;
+    height: 100px;
+    color: white;
   }
+}
 
 
-  /* @keyframes expandDown {
+/* @keyframes expandDown {
     from {}
     to {background: rgba(255, 255, 255, 0); width: 160px; height: 200px; color: white;}
   } */
 
-  @media (max-width: 500px) {
-    @keyframes mobile {
-      from {}
-      to {background: rgba(255, 255, 255, 0); width: 100%; color: white;}
-    }
+@media (max-width: 500px) {
+  @keyframes mobile {
+    from {}
 
-    body {
+    to {
+      background: rgba(255, 255, 255, 0);
       width: 100%;
-    }
-
-    header {
-      position: relative;
-      width: 100%;
-    }
-
-    .container {
-      width: 100%;
-    }
-
-    .nav {
-      width: 100%;
-
-    }
-
-    .text {
-      opacity: 100;
-      color: black;
-      text-shadow: -1px 1px #FFFFFF;
-    }
-
-    .spacer {
-      display: none;
-    }
-
-    .boxes {
-      flex-direction: column;
-      width: 100%;
-      margin-bottom: 0;
-    }
-
-    .video {
-      margin: 0 auto;
-    }
-
-    .box {
-      width: 100%;
-    }
-
-    .box:hover {
-      animation-name: mobile;
-    }
-
-    .box1 {
-      background: rgb(131, 145, 83);
-      background-image: url(img/353444\ -\ audio\ film\ media\ movie\ music\ play\ player\ video.svg);
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: 30%;
-    }
-    
-    .box2 {
-      background: rgb(255, 229, 176);
-      background-image: url(img/353424\ -\ instagram\ logo.svg);
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: 30%;
-  
-    }
-    
-    .box3 {
-      background: rgb(182, 206, 160);
-      background-image: url(img/353427\ -\ logo\ twitter.svg);
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: 30%;
-    }
-    
-    .box4 {
-      background: rgb(250, 162, 111);
-      background-image: url(img/353429\ -\ audio\ music\ note\ sound.svg);
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: 30%;
-    }
-
-    .small {
-      display: block;
-      position: relative;
-      width: 100%
+      color: white;
     }
   }
+
+  body {
+    width: 100%;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .nav {
+    width: 100%;
+
+  }
+
+  .text {
+    opacity: 100;
+    color: black;
+    text-shadow: -1px 1px #FFFFFF;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  .boxes {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .video {
+    margin: 0 auto;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box:hover {
+    animation-name: mobile;
+  }
+
+  .box1 {
+    background: rgb(131, 145, 83);
+    background-image: url(img/353444\ -\ audio\ film\ media\ movie\ music\ play\ player\ video.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30%;
+  }
+
+  .box2 {
+    background: rgb(255, 229, 176);
+    background-image: url(img/353424\ -\ instagram\ logo.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30%;
+
+  }
+
+  .box3 {
+    background: rgb(182, 206, 160);
+    background-image: url(img/353427\ -\ logo\ twitter.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30%;
+  }
+
+  .box4 {
+    background: rgb(250, 162, 111);
+    background-image: url(img/353429\ -\ audio\ music\ note\ sound.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30%;
+  }
+
+  .small {
+    display: block;
+    position: relative;
+    width: 100%
+  }
+}
