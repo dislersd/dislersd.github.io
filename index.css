@@ -64,6 +64,8 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   h1 {
@@ -76,13 +78,6 @@ html {
     background: #222222;
     letter-spacing: 1.1px;
   }
-  
-  .boxes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
   /* .boxes2 {
     width: 80%;
@@ -93,7 +88,48 @@ html {
     justify-content: flex-end;
     align-items: flex-end;
   } */
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+
+  address {
+    padding-top: 2rem;
+  }
   
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.979);
+  }
+
+  .spacer {
+    height: 15.3rem;
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .box {
     height: 100px;
     width: 100px;
@@ -106,16 +142,6 @@ html {
 
   .box:hover {
     background: none;
-  }
-
-  img {
-      position: relative;
-      width: inherit;
-      height: inherit; 
-  }
-
-  img:hover {
-      opacity: 0;
   }
   
   .box:hover {
@@ -233,16 +259,45 @@ html {
       animation-name: expand;
       animation-duration: .4s;
       animation-fill-mode: forwards
-    } 
-
-  .master {
+    }
+    
+  .abme {
+    max-width: 880px;
+    width: 100%;
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 3rem 1rem;
+    background: #ffffff;
+    border-top: 1px dotted #27292b;
+    border-bottom: 1px dotted #27292b;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } 
+
+  .abme h2 {
+    font-size: 3.2rem;
+    margin: 1rem auto;
+    width: 100%;
+    font-family: Roboto;
+  }
+
+  .abme p {
+    font-family: Space Mono, Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #27292b;
+    max-width: 60rem;
+    width: 100%;
+  }
+
+  .abme a {
+    text-decoration: none;
+    color: navy;
   }
 
 .video {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  width: 90%;
 }
 
 .small {
@@ -273,14 +328,32 @@ z-index: -1;
       to {background: rgba(255, 255, 255, 0); width: 100%; color: white;}
     }
 
+    body {
+      width: 100%;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .nav {
+      width: 100%;
+
+    }
+
     .text {
       opacity: 100;
       color: black;
       text-shadow: -1px 1px #FFFFFF;
     }
 
-    body {
-      display: block;
+    .spacer {
+      display: none;
     }
 
     .boxes {
