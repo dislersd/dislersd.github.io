@@ -353,8 +353,8 @@ address {
   padding: 2rem;
   margin: 3rem 1rem;
   background: #ffffff;
-  border-top: 1px dotted #27292b;
-  border-bottom: 1px dotted #27292b;
+  border-top: 2px dotted #27292b;
+  border-bottom: 2px dotted #27292b;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -383,6 +383,20 @@ address {
 
 .abme a:hover {
   color: coral;
+}
+
+.abmeElements {
+  padding: 2rem 2rem 2rem 3rem;
+}
+
+.abme address {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 3rem auto 0 auto;
+  padding: 0;
 }
 
 .video {
@@ -460,6 +474,16 @@ address {
     flex-direction: column;
     width: 100%;
     margin-bottom: 0;
+  }
+  
+  .abme {
+    border: none;
+  }
+
+  .abmeElements {
+    border-left: 1.5px dotted black;
+    border-right: 1.5px dotted black;
+    padding: 2rem 2rem 2rem 3rem;
   }
 
   .video {
