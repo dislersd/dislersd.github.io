@@ -362,8 +362,7 @@ address {
 
 .abme h2 {
   font-size: 3.2rem;
-  margin: 1rem auto;
-  width: 100%;
+  width: 39%;
   font-family: Roboto;
 }
 
@@ -374,6 +373,7 @@ address {
   color: #27292b;
   max-width: 60rem;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .abme a {
@@ -386,7 +386,9 @@ address {
 }
 
 .abmeElements {
-  padding: 2rem 2rem 2rem 3rem;
+  padding: 2rem;
+  background: rgba(223, 222, 222, 0.575);
+  border-radius: 1rem;
 }
 
 .abme address {
@@ -394,7 +396,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem 4rem 0 auto;
+  margin: 3rem auto 0 auto;
   padding: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
@@ -475,7 +477,7 @@ address {
     width: 100%;
     margin-bottom: 0;
   }
-  
+
   .abme {
     border: none;
   }
@@ -484,6 +486,8 @@ address {
     border-left: 1.5px dotted black;
     border-right: 1.5px dotted black;
     padding: 2rem 2rem 2rem 3rem;
+    border-radius: 0;
+    background: none;
   }
 
   .video {
