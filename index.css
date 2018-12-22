@@ -404,8 +404,6 @@ span {
   padding: 2rem;
   margin: 3rem 1rem;
   background: #ffffff;
-  border-top: 2px dotted #27292b;
-  border-bottom: 2px dotted #27292b;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -450,13 +448,12 @@ span {
 
 .abmeElements {
   padding: 2rem 2rem;
-  border-radius: 1rem;
+  border-bottom: 1.5px solid #000;
 }
 
 .abme address {
-  text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 3rem auto 0 auto;
   padding: 0;
@@ -465,8 +462,24 @@ span {
 
 .txtandimg {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.txtandimg img {
+  width: 80%;
+  max-width: 30rem;
+  margin-top: 0;
+  margin-left: 1rem;
+  border-radius: 3rem;
+}
+
+#ghbutton {
+  width: inherit;
+  margin-bottom: 0;
+}
+
+#ghbutton:hover {
 }
 
 .video {
@@ -537,7 +550,6 @@ $$$$$$$$$$$$$$$$
     to {
       background: rgba(255, 255, 255, 0);
       width: 100%;
-      color: white;
     }
   }
 
@@ -585,6 +597,7 @@ $$$$$$$$$$$$$$$$
   .abmeElements {
     border-left: 1.5px dotted black;
     border-right: 1.5px dotted black;
+    border-bottom: none;
     padding: 2rem 4rem 2rem 4rem;
     border-radius: 0;
     background: none;
@@ -610,6 +623,14 @@ $$$$$$$$$$$$$$$$
   .video {
     margin: 0 auto;
     z-index: 1;
+  }
+
+  .boxes2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
   }
 
   .box {
@@ -658,12 +679,15 @@ $$$$$$$$$$$$$$$$
     margin: 4rem auto 1rem auto;
     height: 3rem;
     padding: 6rem;
-    border-bottom: 1px solid #000;
   }
 
   .text2:hover {
-    color: coral;
+    background: #faee;
+    animation: none;
     border: none;
+    animation-name: mobile;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
   }
 
 
@@ -675,7 +699,6 @@ $$$$$$$$$$$$$$$$
     height: inherit;
     margin: 6rem auto;
     padding: 2rem 1rem;
-    border-top: 1px solid #000;
   }
 
   .small {
@@ -683,5 +706,9 @@ $$$$$$$$$$$$$$$$
     position: relative;
     width: 100%;
     z-index: 1;
+  }
+
+  #ghbutton {
+    display: none;
   }
 }
