@@ -247,6 +247,7 @@ span {
   font-size: 2em;
   display: flex;
   overflow: hidden;
+
 }
 
 .box:hover {
@@ -257,7 +258,6 @@ span {
   animation-name: expand;
   animation-duration: .1s;
   animation-fill-mode: forwards;
-  background: rgb(196, 204, 230);
 }
 
 .text:hover {
