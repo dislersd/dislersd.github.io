@@ -381,16 +381,6 @@ span {
   background-size: 110%;
 }
 
-/* @media screen and (max-height: 450px) {
-    
-    .boxes, .boxes2 {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 0 auto;
-      flex-wrap: nowrap;
-    } */
-
 .box:hover {
   animation-name: expand;
   animation-duration: .4s;
@@ -626,10 +616,6 @@ $$$$$$$$$$$$$$$$
     max-width: 100%;
   }
 
-.abme img {
-  /* display: none; */
-}
-
 .txtandimg {
   display: flex;
   flex-direction: column;
@@ -726,6 +712,6 @@ $$$$$$$$$$$$$$$$
   }
 
   #ghbutton {
-    display: none;
+    margin-top: 2rem;
   }
 }
