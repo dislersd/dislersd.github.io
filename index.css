@@ -482,10 +482,13 @@ span {
 }
 
 .video {
-  width: 90%;
-  position: relative;
-  margin: 2rem;
+  margin: 2rem auto;
   z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
 }
 
 .foot {
