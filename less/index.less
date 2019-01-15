@@ -155,10 +155,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
@@ -184,11 +180,7 @@ h1 {
   } */
 
 header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  grid-column: span 4;
 }
 
 address {
@@ -209,9 +201,9 @@ span {
 
 .container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   background: rgba(255, 255, 255, 0.979);
 }
 
