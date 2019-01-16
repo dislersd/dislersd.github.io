@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -91,7 +90,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -106,21 +104,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -128,13 +122,10 @@ q:after {
   content: '';
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-
 /* 
 *****************************
 *****************************
@@ -147,21 +138,14 @@ table {
 html {
   font-size: 62.5%;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
-
 h1 {
   text-align: center;
   font-family: 'Poppins', Helvetica, sans-serif;
@@ -172,7 +156,6 @@ h1 {
   background: #222222;
   letter-spacing: 2.1px;
 }
-
 /* .boxes2 {
     width: 80%;
     background: rgb(155, 164, 165);
@@ -182,19 +165,12 @@ h1 {
     justify-content: flex-end;
     align-items: flex-end;
   } */
-
 header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  grid-column: span 4;
 }
-
 address {
   padding-top: 2rem;
 }
-
 span {
   font-size: 2rem;
   color: #27292b;
@@ -206,30 +182,25 @@ span {
   border-radius: 20%;
   height: 12px;
 }
-
 .container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   background: rgba(255, 255, 255, 0.979);
 }
-
-
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-
 .boxes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .boxes2 {
   display: flex;
   flex-direction: row;
@@ -237,7 +208,6 @@ span {
   justify-content: space-evenly;
   height: 100%;
 }
-
 .box {
   height: 100px;
   width: 100px;
@@ -247,45 +217,35 @@ span {
   font-size: 2em;
   display: flex;
   overflow: hidden;
-
 }
-
 .box:hover {
   background: none;
 }
-
 .box:hover {
   animation-name: expand;
-  animation-duration: .1s;
+  animation-duration: 0.1s;
   animation-fill-mode: forwards;
 }
-
 .text:hover {
   display: flex;
   animation-name: reveal;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
   color: #161822;
   height: 100%;
   width: 100%;
 }
-
 @keyframes reveal {
-  from {}
-
   to {
     opacity: 100;
-    background: rgb(255, 255, 255);
+    background: #ffffff;
   }
 }
-
 @keyframes expand {
-  from {}
   to {
     width: 11.4rem;
   }
 }
-
 .text {
   text-decoration: none;
   font-size: 2.5rem;
@@ -298,7 +258,6 @@ span {
   align-items: center;
   font-family: 'space mono', Helvetica, sans-serif;
 }
-
 .text2 {
   text-decoration: none;
   font-size: 2.5rem;
@@ -310,88 +269,75 @@ span {
   margin: 0 1rem;
   font-family: 'space mono', Helvetica, sans-serif;
 }
-
-// LESS MIXIN
 .bordtopbot {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
-
 .text2:hover {
-  .bordtopbot;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
-
 .box1 {
-  background: rgb(131, 145, 83);
+  background: #839153;
   background-image: url(../img/353444\ -\ audio\ film\ media\ movie\ music\ play\ player\ video.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110%;
 }
-
 .box2 {
-  background: rgb(255, 229, 176);
+  background: #ffe5b0;
   background-image: url(../img/353424\ -\ instagram\ logo.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110%;
-
 }
-
 .box3 {
-  background: rgb(182, 206, 160);
+  background: #b6cea0;
   background-image: url(../img/353427\ -\ logo\ twitter.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110%;
 }
-
 .box4 {
-  background: rgb(250, 162, 111);
+  background: #faa26f;
   background-image: url(../img/353429\ -\ audio\ music\ note\ sound.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110%;
 }
-
 .box5 {
-  background: rgb(250, 250, 250);
+  background: #fafafa;
   background-image: url(../img/353418\ -\ laptop\ notebook.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110%;
 }
-
 .box6 {
-  background: rgb(191, 222, 220);
+  background: #bfdedc;
   background-image: url(img/353430\ -\ checkbox\ edit\ pen\ pencil.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110%;
 }
-
 .box7 {
-  background: rgb(6, 230, 133);
+  background: #06e685;
   background-image: url(img/353418\ -\ laptop\ notebook.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110%;
 }
-
 .box8 {
-  background: rgb(244, 139, 219);
+  background: #f48bdb;
   background-image: url(img/353418\ -\ laptop\ notebook.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110%;
 }
-
 .box:hover {
   animation-name: expand;
-  animation-duration: .4s;
-  animation-fill-mode: forwards
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
 }
-
 .abme {
   max-width: 880px;
   width: 90%;
@@ -403,7 +349,6 @@ span {
   flex-wrap: nowrap;
   justify-content: center;
 }
-
 .abme h2 {
   font-size: 3.2rem;
   width: 100%;
@@ -411,9 +356,8 @@ span {
   text-align: center;
   margin-bottom: 3rem;
   border-bottom: 1px solid #27292b;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
-
 .abme p {
   font-family: Space Mono, Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
@@ -422,30 +366,24 @@ span {
   max-width: 50%;
   width: 100%;
   margin-right: 0;
-  padding: .5rem;
+  padding: 0.5rem;
   display: inline-block;
 }
-
 .abme a {
   text-decoration: none;
   color: navy;
 }
-
 .abme img {
   width: 100%;
   margin: 0;
 }
-
 .abme a:hover {
   color: coral;
 }
-
-
 .abmeElements {
   padding: 2rem 0rem;
   border-bottom: 1px solid #27292b;
 }
-
 .abme address {
   display: flex;
   justify-content: flex-start;
@@ -454,38 +392,30 @@ span {
   padding: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-
 .txtandimg {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-
 .txtandimg img {
   max-width: 30rem;
   margin-top: 0;
   border-radius: 3rem;
 }
-
 @keyframes img {
-  from {}
   to {
     filter: opacity(80%);
   }
 }
-
 .txtandimg img:hover {
   animation-name: img;
-  animation-duration: .2s;
+  animation-duration: 0.2s;
   animation-fill-mode: forwards;
-
 }
-
 #ghbutton {
   margin: 0 0 0 1.5rem;
   border-radius: 3rem;
 }
-
 .video {
   margin: 2rem auto;
   z-index: 3;
@@ -495,7 +425,6 @@ span {
   max-width: 700px;
   width: 100%;
 }
-
 .foot {
   width: 100%;
   height: 10rem;
@@ -503,14 +432,11 @@ span {
   margin: 2rem;
   z-index: 3;
   flex-wrap: nowrap;
-  
 }
-
 .spacer {
   height: 1rem;
   z-index: 0;
 }
-
 .small {
   display: flex;
   justify-content: center;
@@ -521,10 +447,6 @@ span {
   margin: 0 auto;
   z-index: 1;
 }
-
-
-
-
 /* 
 $$$$$$$$$$$$$$$$
 ################ 
@@ -544,55 +466,39 @@ $$$$$$$$$$$$$$$$
 ################ 
 ################ 
   */
-
-
-
-
-
 @media (max-width: 580px) {
   @keyframes mobile {
-    from {}
-
     to {
       background: rgba(255, 255, 255, 0);
       width: 100%;
     }
   }
-
   body {
     width: 100%;
   }
-
   header {
     position: relative;
     width: 100%;
   }
-
   .container {
     width: 100%;
   }
-
   .nav {
     width: 100%;
-
   }
-
   .text {
     opacity: 100;
     color: black;
     text-shadow: -1px 1px #FFFFFF;
   }
-
   .boxes {
     flex-direction: column;
     width: 100%;
     margin-bottom: 0;
   }
-
   .boxes2 {
     flex-direction: column;
   }
-
   .abme {
     border: none;
     margin: 2rem 0;
@@ -600,7 +506,6 @@ $$$$$$$$$$$$$$$$
     width: 98%;
     flex-direction: column;
   }
-
   .abmeElements {
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -612,29 +517,24 @@ $$$$$$$$$$$$$$$$
     align-items: center;
     justify-content: center;
   }
-
   .abme h2 {
     margin-bottom: 1rem;
     border-bottom: none;
     width: 100vw;
   }
-
   .abme p {
     max-width: 100%;
   }
-
-.txtandimg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
+  .txtandimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .video {
     margin: 0 auto;
     z-index: 1;
   }
-
   .boxes2 {
     width: 100%;
     display: flex;
@@ -642,65 +542,54 @@ $$$$$$$$$$$$$$$$
     align-items: center;
     justify-content: baseline;
   }
-
   .box {
     width: 100%;
   }
-
   .box:hover {
     animation-name: mobile;
   }
-
   .box1 {
-    background: rgb(131, 145, 83);
+    background: #839153;
     background-image: url(../img/353444\ -\ audio\ film\ media\ movie\ music\ play\ player\ video.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 30%;
   }
-
   .box2 {
-    background: rgb(255, 229, 176);
+    background: #ffe5b0;
     background-image: url(../img/353424\ -\ instagram\ logo.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 30%;
-
   }
-
   .box3 {
-    background: rgb(182, 206, 160);
+    background: #b6cea0;
     background-image: url(../img/353427\ -\ logo\ twitter.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 30%;
   }
-
   .box4 {
-    background: rgb(250, 162, 111);
+    background: #faa26f;
     background-image: url(../img/353429\ -\ audio\ music\ note\ sound.svg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 30%;
   }
-
   .text2 {
     width: 100%;
     margin: 4rem auto 1rem auto;
     height: 3rem;
     padding: 6rem;
   }
-
   .text2:hover {
     background: #faee;
     animation: none;
     border: none;
     animation-name: mobile;
-    animation-duration: .4s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
   }
-
-
   .foot {
     display: flex;
     flex-direction: column;
@@ -710,14 +599,12 @@ $$$$$$$$$$$$$$$$
     margin: 6rem auto;
     padding: 2rem 1rem;
   }
-
   .small {
     display: block;
     position: relative;
     width: 100%;
     z-index: 1;
   }
-
   #ghbutton {
     margin-top: 2rem;
   }
